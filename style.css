@@ -1,0 +1,48 @@
+
+
+.button {
+	background-color:transparent;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-family: 'Poiret One', cursive;
+	font-size:28px;
+	font-style:italic;
+	text-decoration:none;
+}
+
+body {
+    background-image: url("cab.jpg");
+}
+
+
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 120px;
+	font-family: 'Lobster', cursive;
+}
+
+h2 {
+	text-align: left;
+	color: white;
+	font-size: 75px;
+	font-family: 'Lobster', cursive;
+}
+
+h3 {
+	text-align: Center;
+	color: white;
+	font-size: 75px;
+	font-family: 'Lobster', cursive;
+}
+
+
+body {
+    text-align: center;
+}
+
+#request {
+		text-align: left;
+	color: white;
+}

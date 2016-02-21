@@ -1,0 +1,30 @@
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+  <head> 
+    <title>Manage</title> 
+	<script type="text/javascript" src="xhr.js"></script>
+    <script type="text/javascript" src="admin.js"></script>
+    <link href="style.css" rel="stylesheet">
+  </head> 
+  <body>
+	
+  	<h3>Manage Bookings</h3>
+
+  	<div id="confirmation"> 
+	    <p></p>  
+	</div> 
+	<div id="confirmation"> 
+	    <p></p>  
+	</div> 
+	<br>
+
+	<form>
+		<input name="submit2" type="button" onClick="assign('assign.php', 'confirmation', 'date')" value='Show Pick-up Requests'></br></br>
+		<input type="text" name="bookingNum">
+
+	    <input name="submit" type ="button" onClick ="booking('manage.php','confirmation', bookingNum.value) " value = "Assign Taxi">
+	</form>
+
+
+	<a href="home.html" " class="button" style="cursor:pointer;">Home </a>
+ </body> 
+</HTML>

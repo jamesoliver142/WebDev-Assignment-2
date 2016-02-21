@@ -1,0 +1,54 @@
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+  <head> 
+    <title>Request</title> 
+	<script type="text/javascript" src="xhr.js"></script>
+    <script type="text/javascript" src="booking.js"> </script>
+    <link href="style.css" rel="stylesheet">
+  </head> 
+  <body>
+  <!--this sets up all the input fields for the user to put in their details-->
+  	<h2>Request A Cab</h2>
+
+  	<div id="confirmation"> 
+	    <p></p>  
+	</div> 
+	<div id="request">
+	<form>
+		<p>Name:</br>
+		<input type="text" id='namefield' name="namefield"></p>
+		<br>
+		
+		<p>Mobile Contact:</br>
+		<input type="text" name="mobi"></p>
+		<br>
+		
+		<p>Booking Date:</br>
+		<input type="date" name="date" value="YYYY-MM-DD" style="text-align: center" maxlength="10"></p>
+		<br>
+		
+		<p>Booking Time:</br>
+		<input type="time" name="time" value="00:00:00" style="text-align: center" maxlength="8"></p>
+		<br>
+		
+		<p>Pickup Location:<br>
+		
+		Unit:<br>
+		<input type="text" name="unit" size="4" maxlength="4"> <br>
+		
+		Number:<br>
+		<input type="text" name="number" size="4" maxlength="4"><br>
+		
+		Address:<br>
+		<input type="text"  name="address"></br>
+		
+		<br>
+		<p>Destination:</br>
+		<input type="text"  name="destination"></p>
+
+		<!--Sends all the data entered to the php booking file-->
+	    <input name="submit" type = "button" onClick = "booking('booking.php','confirmation', namefield.value, mobi.value, date.value, time.value, number.value, address.value, destination.value) " value = "Submit Booking">
+	</form>
+	</div>
+	<a href="home.html" " class="button" style="cursor:pointer;">Home </a>
+ </body> 
+</HTML>
